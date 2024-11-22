@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width,intial-scale=1.0">
+<title>McDonald's</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<!---header section-->
+<header>
+<nav>
+<div class="logo">
+<img src="C:\Users\DELL\Desktop\COMPLETE WEB DEVELOPMENT\PROJECTS\MaCDonald's\1200px-McDonald's_Golden_Arches.svg.png">
+</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="menu-icon" id="menu-icon">
+<span>&#9776;</span>
+</div>
+</nav>
+</header>
+
+
+<!---hero section-->
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Welcome to McDonald's</h1>
+<p>Delicious burgers,fries and shakes await you!</p>
+<a href="#menu" class="btn">Order Now</a>
+</div>
+</section>
+
+
+
+<!---menu section-->
+<section class="menu" id="menu">
+<h2>Our Menu</h2>
+<div class="menu-items">
+<div class="menu-item">
+<img src="20241108_120559.jpg">
+<h3>Big Mac</h3>
+<p>A classic burger with special sauce.</p>
+</div>
+<div class="menu-item">
+<img src="20241108_120728.jpg">
+<h3>Fries</h3>
+<p>Crispy and golden fries.</p>
+</div>
+<div class="menu-item">
+<img src="McDonalds-milkshake-flavors.jpg.webp">
+<h3>Shakes</h3>
+<p>Chocolate, vanilla and strawberry shakes.</p>
+</div>
+</div>
+</section>
+
+
+<!---contact section-->
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<a href="#"><i class="fa-regular fa-address-card"></i></a>
+<p>Have a question? Reach us at:</p>
+<p>Email:contact@mcdonalds.com</p>
+<p>Phone: +1 (800) 123-4567</p>
+</section>
+
+<!---footer section-->
+<footer>
+<p>&copy;2024 McDonald's Corporation.All Rights Reserved.</p>
+</footer>
+<script>
+//mobile menu toggle
+const menuIcon = document.getElementByID('menu-icon');
+const menuLinks = document.querySelector('.nav-links');
+
+menuIcon.addEventListener('click',() =>{
+	navLinks.classList.toggle('active');
+});
+//to close the menu when a link is clicked
+const navItems = document.querySelectorAll('.nav-links a');
+navItems.forEach(item => {
+	item.addEventListener('click',() =>{
+		navLinks.classList.remove('active');
+	});
+});
+</script>
+
+
+</body>
+</html>
